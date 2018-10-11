@@ -14,6 +14,11 @@
 		17532A40215C72FD00FFCDC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17532A3E215C72FD00FFCDC3 /* LaunchScreen.storyboard */; };
 		17532A4B215C72FD00FFCDC3 /* SelfigramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17532A4A215C72FD00FFCDC3 /* SelfigramTests.swift */; };
 		17532A56215C72FD00FFCDC3 /* SelfigramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17532A55215C72FD00FFCDC3 /* SelfigramUITests.swift */; };
+		1780F335216C4CE1007FB8B6 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780F334216C4CE1007FB8B6 /* FeedTableViewController.swift */; };
+		17DFAC6D216313F300BB7E63 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DFAC6C216313F300BB7E63 /* ProfileViewController.swift */; };
+		17DFAC6F2165BC6300BB7E63 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DFAC6E2165BC6300BB7E63 /* User.swift */; };
+		17DFAC712165BF2A00BB7E63 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DFAC702165BF2A00BB7E63 /* Post.swift */; };
+		17E2C073216EE8C700D24498 /* SelfieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E2C072216EE8C700D24498 /* SelfieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		17532A51215C72FD00FFCDC3 /* SelfigramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfigramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17532A55215C72FD00FFCDC3 /* SelfigramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfigramUITests.swift; sourceTree = "<group>"; };
 		17532A57215C72FD00FFCDC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1780F334216C4CE1007FB8B6 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		17DFAC6C216313F300BB7E63 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		17DFAC6E2165BC6300BB7E63 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		17DFAC702165BF2A00BB7E63 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		17E2C072216EE8C700D24498 /* SelfieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		173F7CE5216C057900A8660E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17DFAC6E2165BC6300BB7E63 /* User.swift */,
+				17DFAC702165BF2A00BB7E63 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		173F7CE6216C059200A8660E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1780F334216C4CE1007FB8B6 /* FeedTableViewController.swift */,
+				17DFAC6C216313F300BB7E63 /* ProfileViewController.swift */,
+				17E2C072216EE8C700D24498 /* SelfieCell.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		17532A29215C72FA00FFCDC3 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +126,8 @@
 		17532A34215C72FA00FFCDC3 /* Selfigram */ = {
 			isa = PBXGroup;
 			children = (
+				173F7CE5216C057900A8660E /* Model */,
+				173F7CE6216C059200A8660E /* View Controllers */,
 				17532A35215C72FA00FFCDC3 /* AppDelegate.swift */,
 				17532A37215C72FA00FFCDC3 /* ViewController.swift */,
 				17532A39215C72FA00FFCDC3 /* Main.storyboard */,
@@ -256,8 +287,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17DFAC6F2165BC6300BB7E63 /* User.swift in Sources */,
+				1780F335216C4CE1007FB8B6 /* FeedTableViewController.swift in Sources */,
+				17E2C073216EE8C700D24498 /* SelfieCell.swift in Sources */,
+				17DFAC6D216313F300BB7E63 /* ProfileViewController.swift in Sources */,
 				17532A38215C72FA00FFCDC3 /* ViewController.swift in Sources */,
 				17532A36215C72FA00FFCDC3 /* AppDelegate.swift in Sources */,
+				17DFAC712165BF2A00BB7E63 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
